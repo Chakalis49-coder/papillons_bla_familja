@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<title>Papilløn Blå Familja</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<meta property="og:title" content="Papilløn Blå Familja 🦋">
+	<meta property="og:description" content="🔥 Rejoins nos événements TikTok">
+	<meta property="og:image" content="https://ton-site.github.io/img/default.jpg">
+	<meta property="og:type" content="website">
+</head>
+
+<body>
+
+	<!-- ✅ NAVBAR (PAS DANS LE CONTAINER) -->
+	<nav class="navbar">
+		<div class="nav-container">
+			<a href="index.html" class="logo">Papilløn Blå Familja</a>
+
+			<div class="nav-links" id="navLinks">
+				<a href="index.html" class="active">Accueil</a>
+				<a href="recrutement.html">Recrutement</a>
+				<a href="teams.html">Teams</a>
+				<a href="../pages/evenements.html">Évènements</a>
+			</div>
+
+			<div class="hamburger" id="hamburger">☰</div>
+		</div>
+	</nav>
+
+	<!-- ✅ CONTAINER GLOBAL (NOUVEAU) -->
+	<div class="container-global">
+
+		<div class="layout">
+
+			<!-- TEXTE -->
+			<div class="text-section">
+				<section class="hero">
+					<h1>PAPILLØN BLÅ FAMILJA</h1>
+					<p>Une famille. Une force. Une ascension.</p>
+				</section>
+
+				<section class="description">
+					<p>
+						Bienvenue dans la Papilløn Blå Familja.
+						Une agence unie par la passion du live, l'entraide et la progression.
+					</p>
+				</section>
+			</div>
+
+			<!-- EVENT -->
+			<div class="event-widget">
+				<div class="event-image">
+					<img id="event-image" src="" alt="event">
+				</div>
+				<div class="content">
+					<h3>Prochain Event</h3>
+					<p id="event-title"></p>
+					<p id="event-date"></p>
+					<p id="event-heure"></p>
+					<p id="event-countdown"></p>
+					<button id="calendarBtn">Ajouter au calendrier</button>
+					<button id="shareBtn">Partager</button>
+				</div>
+			</div>
+
+			<!-- ARBRE -->
+			<div class="tree-section">
+				<section class="family-tree">
+					<h2>La Familja</h2>
+					<div id="tree"></div>
+				</section>
+			</div>
+
+			<!-- CHALLENGE -->
+			<div class="challenge-section">
+				<div class="challenge-card">
+					<div class="event-image">
+						<img id="challenge-image" src="" alt="challenge">
+					</div>
+
+					<div class="challenge-content">
+						<h3 id="challenge-title"></h3>
+						<p id="challenge-date"></p>
+						<p id="challenge-heure"></p>
+						<p id="challenge-countdown"></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="script.js"></script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="js/tree.js"></script>
+
+</body>
+
+</html>
