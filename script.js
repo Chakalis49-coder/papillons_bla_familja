@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 				currentEvent = nextEvent;
 
-				document.getElementById("event-title").textContent = nextEvent.title + " " + nextEvent.alias;
+				document.getElementById("event-title").textContent = nextEvent.title;
 				document.getElementById("event-date").textContent = "📅 " + formatDate(nextEvent.date);
 				document.getElementById("event-heure").textContent = "🕒 " + nextEvent.heure;
 				document.getElementById("event-image").src = nextEvent.image;
